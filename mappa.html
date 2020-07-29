@@ -1,36 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="js/report_pdf.js"></script>
-    <script type="text/javascript">
-        function refreshPage() {
-            window.location.reload();
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            height: 100%;
         }
-    </script>
 
-    <style media="screen">
         .btn-danger.custom-btn {
-            background-color: #ff2e43;
-            border-color: #ff2e43;
-        }
+                background-color: #ff2e43;
+                border-color: #ff2e43;
+            }
 
         .btn-danger.custom-btn:hover {
             background-color: #ff243a;
             border-color: #ff243a;
         }
-
     </style>
 
     <title>Coronavirus data</title>
     <link rel="Icon" href="media/coronavirus_PNG93658.png">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="margin-bottom: 15px; background-color: #ff2e43">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff2e43">
         <a class="navbar-brand" href="homepage.html">
             <img src="media\coronavirus_PNG93658.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             Coronavirus Data
@@ -47,37 +44,15 @@
                     <a class="nav-link" href="coronavirus_state.html">Dati per stato</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="report.html">Report PDF<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="report.html">Report PDF</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="mappa.html">Mappa</a>
+                    <a class="nav-link" href="mappa.html">Mappa<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="alert alert-danger" role="alert" style="width: 30%; height: 80px; margin:0 auto; margin-bottom: 10px; text-align: center;">
-            <img src="media\iconfinder_security_secure-14_4857859.png" alt="Alert" style="width: 25px">
-            <span><p>Allerta COVID-19.</p></span>
-        </div>
-
-        <h2>Report PDF giornaliero COVID-19</h2>
-        <p class="text-muted"><em>Dati ufficiali forniti dall'Organizzazione Mondiale della Sanità (OMS)</em></p>
-
-        <table class="table table-stripped">
-            <thead>
-                <th>DATA</th>
-                <th>PDF</th>
-            </thead>
-            <tbody id="dati">
-
-            </tbody>
-        </table>
-
-
-    </div>
-    
+    <iframe width="100%" height="94%" src="https://app.developer.here.com/coronavirus/" frameborder="0"></iframe>
 </body>
-
 </html>
